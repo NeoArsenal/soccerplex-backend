@@ -6,6 +6,11 @@ import lombok.Data;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Optional;
+/**
+ * Patrón aplicado: DTO (Data Transfer Object)
+ * Rol: Transportar datos entre capas sin exponer las entidades internas.
+ * Justificación: Reduce acoplamiento y protege el modelo de dominio.
+ */
 
 @Data
 @Builder
