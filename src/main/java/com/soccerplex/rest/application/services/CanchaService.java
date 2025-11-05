@@ -9,7 +9,13 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
-
+/**
+ * Patrón aplicado: Facade / Service Layer
+ * Rol: Este servicio expone operaciones de negocio al controlador
+ * y coordina las reglas de negocio con los repositorios.
+ * Justificación: Evita que el controlador acceda directamente al repositorio
+ * y mantiene la lógica de negocio centralizada.
+ */
 @Service
 @RequiredArgsConstructor
 @Transactional
