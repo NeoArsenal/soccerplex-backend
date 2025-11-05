@@ -3,7 +3,12 @@ package com.soccerplex.rest.domain.model;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import lombok.Data;
-
+/**
+ * Patrón aplicado: Entity (DDD)
+ * Rol: Representa un objeto del dominio con identidad propia.
+ * Justificación: Modela los objetos del negocio (Cancha, Cliente, Reserva)
+ * y encapsula el estado y comportamiento del dominio.
+ */
 @Data
 public class Reserva {
     private Long id;
