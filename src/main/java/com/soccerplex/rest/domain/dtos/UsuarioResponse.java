@@ -3,7 +3,11 @@ package com.soccerplex.rest.domain.dtos;
 import com.soccerplex.rest.domain.model.Usuario;
 import lombok.Builder;
 import lombok.Data;
-
+/**
+ * Patrón aplicado: DTO (Data Transfer Object)
+ * Rol: Transportar datos entre capas sin exponer las entidades internas.
+ * Justificación: Reduce acoplamiento y protege el modelo de dominio.
+ */
 @Data
 @Builder
 public class UsuarioResponse {
