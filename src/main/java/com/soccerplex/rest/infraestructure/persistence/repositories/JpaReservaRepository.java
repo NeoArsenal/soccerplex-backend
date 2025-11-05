@@ -11,7 +11,12 @@ import java.time.LocalTime;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
+/**
+ * Patrón aplicado: Repository
+ * Rol: Abstracción de la capa de acceso a datos.
+ * Justificación: Permite interactuar con la base de datos sin exponer detalles
+ * de persistencia al dominio o a los servicios.
+ */
 @Repository
 @RequiredArgsConstructor
 public class JpaReservaRepository implements ReservaRepository {
