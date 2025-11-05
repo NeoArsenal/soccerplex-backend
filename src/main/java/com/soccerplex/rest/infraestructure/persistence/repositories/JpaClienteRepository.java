@@ -7,7 +7,12 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
-
+/**
+ * Patrón aplicado: Repository
+ * Rol: Abstracción de la capa de acceso a datos.
+ * Justificación: Permite interactuar con la base de datos sin exponer detalles
+ * de persistencia al dominio o a los servicios.
+ */
 @Repository
 @RequiredArgsConstructor
 public class JpaClienteRepository implements ClienteRepository {
